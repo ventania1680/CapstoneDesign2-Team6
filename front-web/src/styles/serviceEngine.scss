@@ -1,0 +1,29 @@
+.Service {
+  display: block;
+  text-align: center;
+  height: 600px;
+
+  > h1 {
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+
+  .ServiceBox {
+    display: block;
+
+    > div {
+      display: inline-block;
+      margin: 10px 5px;
+      border: 1px solid black;
+      width: 400px;
+      height: 200px;
+    }
+
+    > button {
+    }
+  }
+
+  .ServiceResult {
+    border: 1px solid black;
+  }
+}

@@ -1,0 +1,31 @@
+.Intro {
+  display: block;
+  text-align: center;
+  height: 600px;
+
+  background: black;
+
+  .Background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 600px;
+
+    > img {
+      opacity: 0.2;
+    }
+  }
+
+  .Logo {
+    text-align: center;
+
+    .Name {
+      color: white;
+      font-size: 100px;
+      height: 600px;
+      line-height: 600px;
+      letter-spacing: 50px;
+    }
+  }
+}
