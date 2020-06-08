@@ -14,16 +14,28 @@
     > div {
       display: inline-block;
       margin: 10px 5px;
-      border: 1px solid black;
-      width: 400px;
+      background-color: #d5dce3;
+      width: 200px;
       height: 200px;
     }
 
-    > button {
+    .ServiceBox-select {
+      font-size: 18px;
+      > span {
+        display: inline-block;
+        width: 100%;
+        background-color: #5c6378;
+        color: white;
+      }
+
+      &:hover {
+        width: 60%;
+        background-color: #edf2f4;
+      }
     }
   }
 
   .ServiceResult {
-    border: 1px solid black;
+    height: 300px;
   }
 }

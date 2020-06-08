@@ -11,13 +11,13 @@ const Introduction = () => {
           src={mainBackground}
           alt="mainBackground"
           width="100%"
-          height="600px"
+          height="700px"
         />
       </div>
       <div className="Logo">
         <div className="Name">ROZMOWA</div>
       </div>
-      <div height="600px"></div>
+      <div height="700px"></div>
     </div>
   );
 };
