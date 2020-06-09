@@ -1,20 +1,21 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import palette from "../../lib/styles/palette";
+import oc from "open-color";
 
 const StyledButton = styled.button`
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 2rem;
+  margin: 5px;
   color: white;
   outline: none;
   cursor: pointer;
 
-  background: ${palette.gray[8]};
+  background: ${oc.gray[8]};
   &:hover {
-    background: ${palette.gray[6]};
+    background: ${oc.gray[6]};
   }
 
   ${(props) =>
@@ -27,11 +28,11 @@ const StyledButton = styled.button`
     `}
 
   ${(props) =>
-    props.cyan &&
+    oc.cyan &&
     css`
-      background: ${palette.cyan[5]};
+      background: ${oc.cyan[5]};
       &:hover {
-        background: ${palette.cyan[4]};
+        background: ${oc.cyan[4]};
       }
     `}
 `;
