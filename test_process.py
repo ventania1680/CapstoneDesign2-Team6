@@ -7,7 +7,7 @@ import signal
 import argparse
 
 class TestProcess:
-    PRINT_LIST = ["1","2", "3" ]
+    PRINT_LIST = ["1", "2", "3"]
 
     def __init__(self, log_file=None):
         logging.basicConfig(level=logging.INFO, format='%(message)s')
