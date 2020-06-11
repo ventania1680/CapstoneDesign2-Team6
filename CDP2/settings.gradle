@@ -1,0 +1,2 @@
+rootProject.name='CDP2'
+include ':app'
