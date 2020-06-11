@@ -1,0 +1,37 @@
+@import "~open-color/open-color";
+
+.StyledButton {
+  border: none;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  margin: 5px;
+  margin-top: 15px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+
+  background: $oc-gray-8;
+  background: $oc-cyan-5;
+
+  &:hover {
+    background: $oc-gray-6;
+    background: $oc-cyan-4;
+  }
+}
+
+.StyledForm {
+  justify-content: center;
+}
+
+.StyledInput {
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  margin: 5px;
+  color: black;
+  outline: none;
+  cursor: pointer;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "./Button";
 import oc from "open-color";
+import "../../styles/Button.scss";
 
 const Component = styled.div`
   display: block;
@@ -23,31 +23,6 @@ const ComponentBlock = styled.div`
 `;
 
 const ComponentBox = styled.div`
-  font-size: 18px;
-  border-radius: 0.5rem;
-  display: inline-block;
-  margin: 10px 10px;
-  background-color: ${oc.gray[1]};
-  width: 240px;
-  height: 200px;
-
-  :hover {
-    width: 60%;
-    background-color: ${oc.gray[0]};
-  }
-`;
-
-const ComponentName = styled.div`
-  display: inline-block;
-  justify-content: center;
-  height: 40px;
-  line-height: 40px;
-  width: 100%;
-  background-color: ${oc.cyan[3]};
-  color: white;
-`;
-
-const ResultBox = styled.div`
   justify-content: center;
   border-radius: 0.5rem;
   margin: auto;
@@ -57,34 +32,50 @@ const ResultBox = styled.div`
   background-color: ${oc.gray[1]};
 `;
 
-const ResultName = styled.div`
+const ComponentName = styled.div`
   display: inline-block;
   justify-content: center;
-  width: 100%;
   height: 40px;
   font-size: 20px;
   line-height: 40px;
+  width: 100%;
   background-color: ${oc.cyan[3]};
   color: white;
 `;
 
+const BlankDiv = styled.div`
+  height: 50px;
+`;
+
 const Service = ({ name }) => {
   return (
-    <Component>
-      <TextH1>당신의 소리를 글로 바꿔드려요</TextH1>
-      <ComponentBlock>
-        <ComponentBox>
-          <ComponentName>New {name} File</ComponentName>
-        </ComponentBox>
-        <ComponentBox>
-          <ComponentName>New {name} Input</ComponentName>
-        </ComponentBox>
-      </ComponentBlock>
-      <Button> 변환하기 </Button>
-      <ResultBox>
-        <ResultName>Result</ResultName>
-      </ResultBox>
-    </Component>
+    <>
+      <BlankDiv />
+      <Component>
+        <TextH1>당신의 소리를 글로 바꿔드려요</TextH1>
+        <BlankDiv />
+        <ComponentBlock>
+          <ComponentBox>
+            <ComponentName>New {name} File</ComponentName>
+            <form
+              method="post"
+              encType="multipart/form-data"
+              className="StyledForm"
+            >
+              <input type="file" name="upload" className="StyledInput" />
+              <BlankDiv />
+              <input
+                type="submit"
+                name="submit"
+                value="변환하기"
+                className="StyledButton"
+              />
+            </form>
+          </ComponentBox>
+        </ComponentBlock>
+      </Component>
+      <BlankDiv />
+    </>
   );
 };
 
