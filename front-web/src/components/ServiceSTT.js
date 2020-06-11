@@ -52,7 +52,7 @@ const Service = ({ name }) => {
     <>
       <BlankDiv />
       <Component>
-        <TextH1>당신의 소리를 글로 바꿔드려요</TextH1>
+        <TextH1>저와 이야기해주세요.</TextH1>
         <BlankDiv />
         <ComponentBlock>
           <ComponentBox>
